@@ -1,0 +1,186 @@
+<html>
+<head><title>Moments</title>
+<link  rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+/*responsive gallery*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+</head>
+
+<body>
+<header>
+    <h1> ^-^ Highlights of My Life ^-^</h1>
+</header>
+
+<div class="navbar">
+  <a href="firstpage.html">About Me</a>
+  <a href="interest.html">Personal Interest</a>
+  <a href="baby.html">Baby</a>
+  <a href="family.html">Family Members</a>
+  <a href="friends.html">Friends</a>
+  <a href="place.html">Dream Places</a>
+  <a href="gallery.html">My Gallery</a>
+  <a class="active" href="moments.html">Moments</a>
+</div>
+
+<center>
+<img src="resource1/image/smallfam.jpg" style="width:50%">
+
+<p>This is our family when me and my siblings are just a little kid, I am the only girl in the siblings so I am in the middle in this picture. <br> On my right side is my first brother who I called as abang and on my left is my second brother that I called as angah.</p>
+
+<h2>Memories</h2>
+
+<h4>Please click on the picture to see in bigger picture</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="resource/image/aki.jpg">
+      <img src="resource/image/aki.jpg" width="350" height="400">
+    </a>
+    <div class="desc">Late grandfather on father's side</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="resource/image/maabah2.jpg">
+      <img src="resource/image/maabah2.jpg" width="600" height="400">
+    </a>
+    <div class="desc">My Parents when they are young</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="resource1/image/tokmawan.jpg">
+      <img src="resource1/image/tokmawan.jpg" width="600" height="400">
+    </a>
+    <div class="desc">My both Grandmothers on mother's and father's side</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="resource1/image/toknyang.jpg">
+      <img src="resource1/image/toknyang.jpg" width="600" height="400">
+    </a>
+    <div class="desc">My late Great Grandfather on father's side</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p></p>
+</div>
+</center>
+
+<div class="scroll-container">
+<center>
+<h2>Moments to remember</h2>
+</center>
+  <img src="resource1/image/sayadanabah.jpg" width="500" height="400">
+  <img src="resource1/image/us7.jpg" width="300" height="400">
+  <img src="resource1/image/us8.jpg" width="300" height="400">
+  <img src="resource1/image/us10.jpg" width="600" height="400">
+  <img src="resource1/image/us21.jpg" width="450" height="400">
+  <img src="resource1/image/us22.jpg" width="350" height="400">
+  <img src="resource/image/moments.jpg" width="500" height="400">
+  <img src="resource/image/moment1.jpg" width="500" height="400">
+</div>
+<br><br><br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/love.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+
+<h3>You can contact me via; </h3>
+
+<a href="https://www.instagram.com/jnnh.zulkifli?igsh=MWlrZzJzcnp0eTk3Zg==">
+<img src="icon/ig.jpg" width="50px"></a>
+
+<a href="https://wa.me/qr/5254HQPFZKJSD1">
+<img src="icon/ws.jpg" width="50px"></a>
+
+<a href="https://www.tiktok.com/@angelinyourway?_t=8n2tQmrB9Wq&_r=1">
+<img src="icon/tiktok.jpg" width="50px"></a>
+
+<a href="https://x.com/angelinyourway?t=H7kbTa0EpyS-vCq7m1UNSA&s=35">
+<img src="icon/twt.jpg" width="50px"></a>
+
+<a href="https://www.snapchat.com/add/personchimmy?share_id=Yd2ropdiBe0&locale=en-GB">
+<img src="icon/sc.jpg" width="50px"></a>
+</div>
+
+</body>
+</html>

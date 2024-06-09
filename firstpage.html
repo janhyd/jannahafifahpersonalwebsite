@@ -1,0 +1,167 @@
+<html>
+<head><title>Myself</title>
+<link  rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    </style>
+</head>
+
+<body>
+<header><h1>Me <3</h1>
+</header>
+
+<div class="navbar">
+  <a class="active" href="firstpage.html">About Me</a>
+  <a href="interest.html">Personal Interest</a>
+  <a href="baby.html">Baby</a>
+  <a href="family.html">Family Members</a>
+  <a href="friends.html">Friends</a>
+  <a href="place.html">Dream Places</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="moments.html">Moments</a>
+</div>
+
+<center>
+
+<h2>Photos of Me:</h2>
+<p>Some photos I Would Like To Show</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="resource/image/g1.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/g3.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/me4.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/me5.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/me6.jpg" style="width:60%">
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+  <div class="main">
+    <h2>VIDEOS</h2>
+    <p>Some Videos I Recorded of Myself</p>
+<video controls width="40%" autoplay muted>
+<source src="video/myself.mp4" type="video/mp4">
+</video>
+<video controls width="40%" autoplay muted>
+<source src="video/bgme.mp4" type="video/mp4">
+</video>
+  </div>
+
+<br>
+
+<center>
+ <h2> ABOUT ME:</h2>
+    <p>A little bit of information i could tell about myself</p>
+<br>
+<div class="container">
+  <img src="resource/image/aboutme1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hi! My name is Noor Jannah Afifah binti Mohd Zulkifli. I am 20 years old. I live in Pahang and currently studies in Kedah which means I have been staying in Kedah for almost 2 years!</div>
+  </div>
+</div>
+</center>
+<br>
+<div class="flip-box">
+
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="resource/image/bgflip1.jpg" style="width:60%">
+      <h2><font size="5">Education and Hobby</font></h2>
+    </div>
+    <div class="flip-box-back">
+      <h2><font size="4">1. KINDERGARTEN<br>2. PRIMARY SCHOOL<br>3. HIGHSCHOOL<br>4. UNIVERSITY</h2>
+          <p>My hobby are to spend my time with my family and friend and just to sleep.</font></p>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/love.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+
+<h3>You can contact me via; </h3>
+
+<a href="https://www.instagram.com/jnnh.zulkifli?igsh=MWlrZzJzcnp0eTk3Zg==">
+<img src="icon/ig.jpg" width="50px"></a>
+
+<a href="https://wa.me/qr/5254HQPFZKJSD1">
+<img src="icon/ws.jpg" width="50px"></a>
+
+<a href="https://www.tiktok.com/@angelinyourway?_t=8n2tQmrB9Wq&_r=1">
+<img src="icon/tiktok.jpg" width="50px"></a>
+
+<a href="https://x.com/angelinyourway?t=H7kbTa0EpyS-vCq7m1UNSA&s=35">
+<img src="icon/twt.jpg" width="50px"></a>
+
+<a href="https://www.snapchat.com/add/personchimmy?share_id=Yd2ropdiBe0&locale=en-GB">
+<img src="icon/sc.jpg" width="50px"></a>
+</div>
+
+</body>
+</html>

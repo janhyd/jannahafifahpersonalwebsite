@@ -1,0 +1,279 @@
+<html>
+<head><title>Gallery</title>
+<link  rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<header>
+    
+    <h1> Let's Explore what's in My Gallery!! </h1>
+</header>
+
+<div class="navbar">
+  <a href="firstpage.html">About Me</a>
+  <a href="interest.html">Personal Interest</a>
+  <a href="baby.html">Baby</a>
+  <a href="family.html">Family Members</a>
+  <a href="friends.html">Friends</a>
+  <a href="place.html">Dream Places</a>
+  <a class="active" href="gallery.html">My Gallery</a>
+  <a href="moments.html">Moments</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="resource/image/gallery3.jpg" style="width:100%">
+      <p> Just me and abah together with angah in the background (he is the one wearing red stripe shirt)</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="resource/image/gallery2.jpg" style="width:100%">
+      <p>Well I need to include Qaseh here too ^^</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+      <img src="resource/image/me7.jpg" style="width:100%">
+      <p>6 years old me wearing dress that made by neighbour on Cho's wedding day. (Cho is ma's younger brother)</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+      <img src="resource1/image/smallfam.jpg" style="width:100%">
+      <p>Well I love this picture a lot since we do not hvae many picture like this anymore.</p>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+      <img src="resource/image/gallery1.jpg" style="width:100%">
+      <p>Again... Qaseh is a must.</p>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+      <img src="resource/image/gallery.jpg" style="width:120%">
+      <p>This picture means so much to me. Three of us taking picture together as a kid.</p>
+    </div>
+  </div>
+</div>
+</center>
+
+<center>
+
+_____________________________________________________________________________
+
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="resource/image/org12.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/friend11.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/g1.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="resource/image/g3.jpg" style="width:60%">
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+_____________________________________________________________________________
+<br><br>
+  <div class="main">
+    <h2>VIDEOS</h2>
+    <p>Some Videos I Recorded of Myself</p>
+<video controls width="40%" autoplay muted>
+<source src="video/me.mp4" type="video/mp4">
+</video>
+<video controls width="40%" autoplay muted>
+<source src="video/mee.mp4" type="video/mp4">
+</video>
+<br><br><br>
+<video controls width="40%" autoplay muted>
+<source src="video/gallery.mp4" type="video/mp4">
+</video>
+<video controls width="40%" autoplay muted>
+<source src="video/gallery1.mp4" type="video/mp4">
+</video>
+  </div>
+
+<br><br><br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/love.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+
+<h3>You can contact me via; </h3>
+
+<a href="https://www.instagram.com/jnnh.zulkifli?igsh=MWlrZzJzcnp0eTk3Zg==">
+<img src="icon/ig.jpg" width="50px"></a>
+
+<a href="https://wa.me/qr/5254HQPFZKJSD1">
+<img src="icon/ws.jpg" width="50px"></a>
+
+<a href="https://www.tiktok.com/@angelinyourway?_t=8n2tQmrB9Wq&_r=1">
+<img src="icon/tiktok.jpg" width="50px"></a>
+
+<a href="https://x.com/angelinyourway?t=H7kbTa0EpyS-vCq7m1UNSA&s=35">
+<img src="icon/twt.jpg" width="50px"></a>
+
+<a href="https://www.snapchat.com/add/personchimmy?share_id=Yd2ropdiBe0&locale=en-GB">
+<img src="icon/sc.jpg" width="50px"></a>
+</div>
+
+</body>
+</html>

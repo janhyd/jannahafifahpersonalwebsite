@@ -1,0 +1,217 @@
+<html>
+<head><title>Friends</title>
+<link  rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 35px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+}
+    </style>
+</head>
+<body>
+<header>
+    
+    <h1> My Beloved Friends that I Have to Stay with...</h1>
+</header>
+
+<div class="navbar">
+  <a href="firstpage.html">About Me</a>
+  <a href="interest.html">Personal Interest</a>
+  <a href="baby.html">Baby</a>
+  <a href="family.html">Family Members</a>
+  <a class="active" href="friends.html">Friends</a>
+  <a href="place.html">Dream Places</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="moments.html">Moments</a>
+</div>
+
+  <div class="main">
+<center>
+<h2>My Trio</h2>
+<p>We have known each other for more than 10 years</p>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="resource/image/ijah.jpg" style="width:90%">
+      <h3>Izzah</h3>
+      <p>An introvert yet an outgoing person. She will go crazy if things not going her way</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="resource/image/ijah1.jpg" style="width:100%">
+      <h3>Ijah</h3>
+      <p>The loud one and the one who always free and ask for three of us to go out together knowing that me and mardhiah always had things to do.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+      <img src="resource/image/madi.jpg" style="width:90%">
+      <h3>Mardhiah</h3>
+      <p>An ambivert person and act like an older sister to two of me (me and ijah). She's the only one who think about things using brain not feelings.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+      <img src="resource/image/madi1.jpg" style="width:100%">
+      <h3>Madi</h3>
+      <p>The most realistic person but somehow type of person who panicked over something. She's cool.</p>
+    </div>
+  </div>
+</div>
+</div>
+</center>
+
+<div class="scroll-container">
+<center>
+<h2>Our Pictures Together</h2>
+</center>
+  <img src="resource/image/org3.jpg" width="400" height="400">
+  <img src="resource/image/org5.jpg" width="400" height="400">
+  <img src="resource/image/org6.jpg" width="400" height="400">
+  <img src="resource/image/org9.jpg" width="400" height="400">
+  <img src="resource/image/org12.jpg" width="500" height="400">
+  <img src="resource/image/org14.jpg" width="500" height="400">
+  <img src="resource/image/org15.jpg" width="500" height="400">
+  <img src="resource/image/org19.jpg" width="500" height="400">
+</div>
+<br><br>
+
+<div class="scroll-container">
+<center>
+<h2>My University Friend that I love</h2>
+</center>
+  <img src="resource/image/friend2.jpg" width="400" height="400">
+  <img src="resource/image/friend10.jpg" width="500" height="400">
+  <img src="resource/image/friend11.jpg" width="500" height="400">
+  <img src="resource/image/friend12.jpg" width="500" height="400">
+  <img src="resource/image/friend18.jpg" width="500" height="400">
+  <img src="resource/image/friend19.jpg" width="500" height="400">
+  <img src="resource/image/friend20.jpg" width="500" height="400">
+  <img src="resource/image/friend22.jpg" width="500" height="400">
+</div>
+<br><br>
+
+<center>
+  <div class="main">
+    <h2>Me and My Friends</h2>
+<video controls width="60%" autoplay muted>
+<source src="video/friend.mp4" type="video/mp4">
+</video>
+<br><br>
+<video controls width="60%" autoplay muted>
+<source src="video/friend1.mp4" type="video/mp4">
+</video>
+<br><br>
+<video controls width="60%" autoplay muted>
+<source src="video/friend2.mp4" type="video/mp4">
+</video>
+
+<br><br><br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/love.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+
+<h3>You can contact me via; </h3>
+
+<a href="https://www.instagram.com/jnnh.zulkifli?igsh=MWlrZzJzcnp0eTk3Zg==">
+<img src="icon/ig.jpg" width="50px"></a>
+
+<a href="https://wa.me/qr/5254HQPFZKJSD1">
+<img src="icon/ws.jpg" width="50px"></a>
+
+<a href="https://www.tiktok.com/@angelinyourway?_t=8n2tQmrB9Wq&_r=1">
+<img src="icon/tiktok.jpg" width="50px"></a>
+
+<a href="https://x.com/angelinyourway?t=H7kbTa0EpyS-vCq7m1UNSA&s=35">
+<img src="icon/twt.jpg" width="50px"></a>
+
+<a href="https://www.snapchat.com/add/personchimmy?share_id=Yd2ropdiBe0&locale=en-GB">
+<img src="icon/sc.jpg" width="50px"></a>
+</div>
+
+</body>
+</html>

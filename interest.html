@@ -1,0 +1,321 @@
+<html>
+<head><title>Interest</title>
+<link  rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style> 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 35px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/*image shake*/
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+</head>
+
+<body>
+<header>
+    
+    <h1> What am I Interest in?</h1>
+</header>
+
+<div class="navbar">
+  <a href="firstpage.html">About Me</a>
+  <a class="active" href="interest.html">Personal Interest</a>
+  <a href="baby.html">Baby</a>
+  <a href="family.html">Family Members</a>
+  <a href="friends.html">Friends</a>
+  <a href="place.html">Dream Places</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="moments.html">Moments</a>
+</div>
+<center>
+<h1>My Personal Interest!</h1>
+
+<button onclick="typeWriter()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'I would like to share things I have been interested through out my life. I will devide between Music, Creativity of Art, Sports and Makeup.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</center>
+
+<marquee>
+<div class="row">
+  <div class="column">
+    <img src="icon/musics.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="icon/arts.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="icon/sports.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="icon/makeupwords.jpg" style="width:100%">
+  </div>
+</div>
+</marquee>
+
+<br><br>
+
+<div class="scroll-container">
+<center>
+<h2>MUSIC</h2>
+</center>
+  <img src="icon/music1.jpg" width="500" height="400">
+  <img src="icon/music2.jpg" width="500" height="400">
+  <img src="icon/music3.jpg" width="500" height="400">
+  <img src="icon/music4.jpg" width="500" height="400">
+</div>
+
+<br><br>
+
+  <div class="main">
+<center>
+<h2>GUITAR</h2>
+<p>No other instrument mimics the capacity of the human voice to express emotion like the guitar</p>
+</center>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="icon/guitarr.jpg" style="width:90%">
+      <p>Compared to wind, reed, percussion and bowed instruments which can play only one or two notes at a time, the guitar can play chords and melodically complex and interesting music.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+      <img src="icon/guitar.jpg" style="width:85%">
+      <p>The tone of a guitar is its voice, and just like human voices, every guitar has a unique tone that sets it apart. The tone of a guitar is not just about the sound it produces, but also about how it responds to the player's touch.</p>
+    </div>
+  </div>
+</div>
+</div>
+</center>
+
+<center>
+<h2>DRUM</h2>
+<p> I have always been interested in drums <br>
+ Drums are an incredibly versatile instrument, and the vast sonic palette available means they fulfill a huge variety of musical applications</p>
+<img src="icon/drum.jpg" style="width:40%">__________________
+<img src="icon/drumm.jpg" style="width:32%">
+<p>The rhythms of drums are the heartbeat within every style of music. Playing drums can relieve frustration, disappointment and stress. <br>
+Playing for just a few minutes can boost your mood. Drummers practice their art, it's as if they too are changing the world and touching the human spirit through the rhythm of the drum. <br>
+It is proven that drumming releases endorphins in the brain which create feelings of happiness and euphoria. It puts you in a relaxed state which reduces anxiety and tension. <br>
+This allows you to escape lingering negative feelings which in turn helps to cope with anxiety and depression.</p>
+</center>
+
+<div class="scroll-container">
+<center>
+<h2>Creativity of Art</h2>
+<p>Art gives meaning to our lives and helps us understand our world. It is an essential part of our culture because it allows us to have a deeper understanding of our emotions.</p>
+</center>
+  <img src="icon/art1.jpg" width="500" height="400">
+  <img src="icon/art2.jpg" width="500" height="400">
+  <img src="icon/art5.jpg" width="500" height="400">
+<center>
+<p>Art have been my hobbies before. It has always been either me doing sketches using pencils, pens and markers to make any design.<br>
+I am also into painting which I will just directly use my water colour on piece of drawing block or canvas. I used to make a lot of drawing and painting in my highschool life and after school, but then stop because of university. <br>
+I can make many drawing and painting but I am weak in colouring. I wish I could continue my passion in art after this whenever I am free because I am already lack of skills since i left everythings behind.</p>
+</center>
+</div>
+
+<br><br>
+
+<center>
+<h2>Sports that I am interested in is -></h2> <h3>HOCKEY</h3>
+<p>I love hockey since middle school until now. Unlike other sports hockey is fast paced and exciting with end to end action. There isn't the delay between plays like other popular sports.</p>
+
+<img id="myImg" src="icon/hockey1.jpg" style="width:50%;max-width:300px">
+<p>please click on this picture</p>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+</center>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<br><br>
+<center>
+<h2>Makeup and Make Over</h2> 
+<p>Please move mouse to each picture below >< </p>
+<img src="icon/makeup1.jpg" width="250" height="300">
+<img src="icon/makeup2.jpg" width="250" height="300">
+<img src="icon/makeup3.jpg" width="250" height="300">
+<img src="icon/makeup5.jpg" width="250" height="300">
+<p>Makeup acts and stimulates three of our senses: touch (which encompasses all sensations from the body surface), smell (fragrance), and sight (the process of becoming and looking beautiful). <br>
+The positive stimulation of these senses by makeup can induce sensory as well as psychological pleasure.<br>
+Why do I wear makeup everytime I went out of my house? <br>
+I am using makeup to cover up my insecurities atleast on how I look. Other than that, I am in so much interest in makeup because it is the only way to boost my confident and feels better.</p>
+</center>
+<br><br><br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> top <br> <img src="icon/love.jpg" width="30px"></button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+
+<h3>You can contact me via; </h3>
+
+<a href="https://www.instagram.com/jnnh.zulkifli?igsh=MWlrZzJzcnp0eTk3Zg==">
+<img src="icon/ig.jpg" width="50px"></a>
+
+<a href="https://wa.me/qr/5254HQPFZKJSD1">
+<img src="icon/ws.jpg" width="50px"></a>
+
+<a href="https://www.tiktok.com/@angelinyourway?_t=8n2tQmrB9Wq&_r=1">
+<img src="icon/tiktok.jpg" width="50px"></a>
+
+<a href="https://x.com/angelinyourway?t=H7kbTa0EpyS-vCq7m1UNSA&s=35">
+<img src="icon/twt.jpg" width="50px"></a>
+
+<a href="https://www.snapchat.com/add/personchimmy?share_id=Yd2ropdiBe0&locale=en-GB">
+<img src="icon/sc.jpg" width="50px"></a>
+</div>
+
+</body>
+</html>
